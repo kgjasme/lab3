@@ -97,20 +97,30 @@
         }
 
         .games-list, .movie-list, .music-list {
-            position: fixed;
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
-            display: none; 
-            flex-direction: row; 
-            align-items: center;
-            justify-content: center; 
-            animation: fade-in 0.5s ease-out;
-            width: auto; 
-            max-width: 80%;
-            z-index: 3; 
-            color: white; 
-        }
+			position: fixed;
+			top: 50%; 
+			left: 50%; 
+			transform: translate(-50%, -50%); 
+			display: none; 
+			flex-direction: row; 
+			align-items: center;
+			justify-content: center; 
+			animation: fade-in 1s ease-out; /* Changed duration to 1s */
+			width: auto; 
+			max-width: 80%;
+			z-index: 3; 
+			color: white; 
+		}
+
+		@keyframes fade-in {
+			from {
+			opacity: 0;
+		}
+			to {
+			opacity: 1;
+		}
+		}
+		}
 
         .games-list.visible, .movie-list.visible, .music-list.visible {
             display: flex; 
@@ -304,8 +314,6 @@
             <span>Rap</span>
         </li>
     </ul>
-            </li>
-        </ul>
     </div>
 </div>
 
@@ -335,3 +343,4 @@
 
 </body>
 </html>
+
