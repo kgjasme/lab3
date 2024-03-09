@@ -96,7 +96,7 @@
             color: #85C7F2;
         }
 
-        .games-list {
+        .games-list, .movie-list, .music-list {
             position: fixed;
             top: 50%; 
             left: 50%; 
@@ -112,11 +112,11 @@
             color: white; 
         }
 
-        .games-list.visible {
+        .games-list.visible, .movie-list.visible, .music-list.visible {
             display: flex; 
         }
 
-        .games-list li {
+        .games-list li, .movie-list li, .music-list li {
             list-style: none;
             text-align: center; 
         }
@@ -128,17 +128,8 @@
             margin-right: 20px;
         }
 
-        .games-list span {
+        .games-list span, .movie-list span, .music-list span {
             display: block;
-        }
-
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
 
         .date-time-container {
@@ -181,9 +172,36 @@
         document.addEventListener("DOMContentLoaded", function () {
             const gamesIcon = document.querySelector(".gamepad-icon");
             const gamesList = document.querySelector(".games-list");
+            const movieIcon = document.querySelector(".movie-icon");
+            const movieList = document.querySelector(".movie-list");
+            const musicIcon = document.querySelector(".music-icon");
+            const musicList = document.querySelector(".music-list");
 
             gamesIcon.addEventListener("click", function () {
-                gamesList.classList.toggle("visible"); // Toggle the 'visible' class to show/hide the games list
+                gamesList.classList.toggle("visible");
+                if (gamesList.classList.contains("visible")) {
+                    fadeIn(gamesList);
+                } else {
+                    fadeOut(gamesList);
+                }
+            });
+
+            movieIcon.addEventListener("click", function () {
+                movieList.classList.toggle("visible");
+                if (movieList.classList.contains("visible")) {
+                    fadeIn(movieList);
+                } else {
+                    fadeOut(movieList);
+                }
+            });
+
+            musicIcon.addEventListener("click", function () {
+                musicList.classList.toggle("visible");
+                if (musicList.classList.contains("visible")) {
+                    fadeIn(musicList);
+                } else {
+                    fadeOut(musicList);
+                }
             });
 
             const profileImage = document.querySelector(".profile-image");
@@ -212,6 +230,24 @@
             setInterval(updateDateTime, 1000);
             updateDateTime();
         });
+
+        function fadeIn(element) {
+            element.style.opacity = '0';
+            element.style.display = 'flex';
+
+            setTimeout(function() {
+                element.style.opacity = '1';
+            }, 100);
+        }
+
+        function fadeOut(element) {
+            element.style.opacity = '1';
+
+            setTimeout(function() {
+                element.style.opacity = '0';
+                element.style.display = 'none';
+            }, 100);
+        }
     </script>
 </head>
 <body>
@@ -232,6 +268,42 @@
             <li>
                 <img src="https://4kwallpapers.com/images/wallpapers/grand-theft-auto-v-1920x1080-10738.jpg" alt="Grand Theft Auto V">
                 <span>Grand Theft Auto V</span>
+            </li>
+        </ul>
+        <a href="#" class="movie-icon" title="Favorite Movies">
+            <i class="fas fa-film nav-icon"></i>
+        </a>
+         <ul class="movie-list">
+        <li>
+            <img src="https://www.gstatic.com/tv/thumb/v22vodart/3429/p3429_v_v8_aa.jpg" alt="The Shawshank Redemption">
+            <span>The Shawshank Redemption</span>
+        </li>
+        <li>
+            <img src="https://www.gstatic.com/tv/thumb/v22vodart/16321/p16321_v_v8_ab.jpg" alt="The Godfather">
+            <span>The Godfather</span>
+        </li>
+        <li>
+            <img src="https://www.gstatic.com/tv/thumb/v22vodart/14805/p14805_v_v8_aa.jpg" alt="Pulp Fiction">
+            <span>Pulp Fiction</span>
+        </li>
+		</ul>
+        <a href="#" class="music-icon" title="Favorite Music Genres">
+            <i class="fas fa-music nav-icon"></i>
+        </a>
+         <ul class="music-list">
+        <li>
+            <img src="https://media.istockphoto.com/photos/rock-music-word-written-with-bolder-white-and-green-cubes-picture-id1133672791?k=6&m=1133672791&s=612x612&w=0&h=qkbIYSS_GxIBgXNivKpCR6ahQwOhCxFgJ-PNrHWlS9s=" alt="Rock">
+            <span>Rock</span>
+        </li>
+        <li>
+            <img src="https://media.istockphoto.com/photos/pop-music-picture-id687847258?k=6&m=687847258&s=612x612&w=0&h=7vJ7tn-mT2wi6GZ7ZLM1RpBhvXri4ZY1lAPvkFAxgAM=" alt="Pop">
+            <span>Pop</span>
+        </li>
+        <li>
+            <img src="https://media.istockphoto.com/photos/hiphop-music-concert-scene-picture-id912446980?k=6&m=912446980&s=612x612&w=0&h=25ZdNPI6qTbcBVrsDZpjM8ICR1r5XhunXyV7DB_KxPc=" alt="Hip Hop">
+            <span>Hip Hop</span>
+        </li>
+		</ul>
             </li>
         </ul>
     </div>
