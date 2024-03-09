@@ -68,7 +68,7 @@
 
         .main-heading p {
             margin: 5px 0 0;
-             font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
         }
 
         .nav-container {
@@ -97,30 +97,30 @@
         }
 
         .games-list, .movie-list, .music-list {
-			position: fixed;
-			top: 50%; 
-			left: 50%; 
-			transform: translate(-50%, -50%); 
-			display: none; 
-			flex-direction: row; 
-			align-items: center;
-			justify-content: center; 
-			animation: fade-in 1s ease-out; /* Changed duration to 1s */
-			width: auto; 
-			max-width: 80%;
-			z-index: 3; 
-			color: white; 
-		}
+            position: fixed;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            display: none; 
+            flex-direction: row; 
+            align-items: center;
+            justify-content: center; 
+            animation: fade-in 1s ease-out; /* Changed duration to 1s */
+            width: auto; 
+            max-width: 80%;
+            z-index: 3; 
+            color: white; 
+            font-family: 'Source Sans Pro', sans-serif; /* Added font-family */
+        }
 
-		@keyframes fade-in {
-			from {
-			opacity: 0;
-		}
-			to {
-			opacity: 1;
-		}
-		}
-		}
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
         .games-list.visible, .movie-list.visible, .music-list.visible {
             display: flex; 
@@ -319,7 +319,7 @@
 
 <div class="profile-container">
     <div class="profile-frame">
-        <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/429790512_2958159274323399_7338016723462110732_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHPCL3FLkRZobzp3nbS2b-TAhc0Bf_-ZMoCFzQF__5kyuLczXfOFdOhBHZM52FQXTYtBZsfI9X8vqKiDllmWTe4&_nc_ohc=P6lBIojX-_AAX8Dr8as&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfC3DWn4f1hnd7wu3Zp9Jbs_buWndwP_xoQ-NRxIQ0jbuQ&oe=65F05287"class="profile-image">
+        <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/429790512_2958159274323399_7338016723462110732_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHPCL3FLkRZobzp3nbS2b-TAhc0Bf_-ZMoCFzQF__5kyuLczXfOFdOhBHZM52FQXTYtBZsfI9X8vqKiDllmWTe4&_nc_ohc=P6lBIojX-_AAX8Dr8as&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfC3DWn4f1hnd7wu3Zp9Jbs_buWndwP_xoQ-NRxIQ0jbuQ&oe=65F05287" class="profile-image">
     </div>
     <div class="main-heading">
         <h1>Klarenz Jasme</h1>
@@ -343,4 +343,3 @@
 
 </body>
 </html>
-
