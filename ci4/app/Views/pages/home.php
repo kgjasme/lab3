@@ -129,7 +129,9 @@
         .games-list li, .movie-list li, .music-list li {
             list-style: none;
             text-align: center; 
-            margin-right: 20px; /* Add space between items */
+             display: inline-block; /* Change display property */
+			margin-right: 20px; /* Add space between items */
+			vertical-align: top; /* Align items to the top */
         }
 
         .games-list img {
@@ -176,6 +178,11 @@
             margin-left: 50px;
             padding-top: 20px; 
         }
+		.list-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
     </style>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
     <script defer>
@@ -267,6 +274,8 @@
             <i class="fas fa-gamepad nav-icon"></i>
         </a>
         <ul class="games-list">
+		 <div class="list-container">
+			<h2>Favorite games to play</h2>
             <li>
                 <img src="https://i.pinimg.com/originals/d1/de/fa/d1defa4795faffe3bb98a44787fe02aa.jpg" alt="League of Legends">
                 <span>League of Legends</span>
@@ -284,6 +293,8 @@
             <i class="fas fa-film nav-icon"></i>
         </a>
          <ul class="movie-list">
+		  <div class="list-container">
+			<h2>Favorite movies/series</h2>
         <li>
             <img src="https://www.indiewire.com/wp-content/uploads/2022/10/MCDWHCH_EC014.jpg" alt="White Chicks" style="width: 280px; height: 200px; border-radius: 10px;">
             <span>White chicks</span>
@@ -301,16 +312,18 @@
             <i class="fas fa-music nav-icon"></i>
         </a>
           <ul class="music-list">
+		   <div class="list-container">
+			<h2>My music taste</h2>
         <li>
-            <img src="https://www.billboard.com/wp-content/uploads/stylus/501740-r-and-b-list-617-409.jpg?w=617" alt="RnB and Soul" style="width: 280px; height: 200px; border-radius: 10px;">
+            <img src="https://www.billboard.com/wp-content/uploads/stylus/501740-r-and-b-list-617-409.jpg?w=617" alt="RnB and Soul" style="width: 280px; height: 200px; border-radius: 20px;">
             <span>RnB and Soul</span>
         </li>
         <li>
-            <img src="https://www.rappler.com/tachyon/2023/12/breakthrough-opm-artists-december-16-2023.jpg" alt="OPM" style="width: 280px; height: 200px; border-radius: 10px;">
+            <img src="https://www.rappler.com/tachyon/2023/12/breakthrough-opm-artists-december-16-2023.jpg" alt="OPM" style="width: 280px; height: 200px; border-radius: 20px;">
             <span>OPM</span>
         </li>
         <li>
-            <img src="https://www.rappler.com/tachyon/2023/12/breakthrough-opm-artists-december-16-2023.jpg" alt="Rap" style="width: 280px; height: 200px; border-radius: 10px;">
+            <img src="https://www.rollingstone.com/wp-content/uploads/2022/05/210603_200rapalbums_FINAL.jpg?w=1581&h=1054&crop=1" alt="Rap" style="width: 280px; height: 200px; border-radius: 20px;">
             <span>Rap</span>
         </li>
     </ul>
