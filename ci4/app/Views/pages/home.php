@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klarenz Jasme</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
     <style>
         body {
             margin: 0;
@@ -62,13 +62,13 @@
         }
 
         .main-heading h1 {
-			margin: 0;
-			font-family: 'Raleway', sans-serif;
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
         }
 
         .main-heading p {
             margin: 5px 0 0;
-			 font-family: 'Source Sans Pro', sans-serif;
+             font-family: 'Source Sans Pro', sans-serif;
         }
 
         .nav-container {
@@ -119,13 +119,13 @@
         .games-list li, .movie-list li, .music-list li {
             list-style: none;
             text-align: center; 
+            margin-right: 20px; /* Add space between items */
         }
 
         .games-list img {
             width: 280px;
             height: 200px;
             border-radius: 10px;
-            margin-right: 20px;
         }
 
         .games-list span, .movie-list span, .music-list span {
@@ -133,14 +133,14 @@
         }
 
         .date-time-container {
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			color: white;
-			font-size: 14px;
-			z-index: 1;
-			font-family: 'Source Sans Pro', sans-serif; 
-		}
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            font-size: 14px;
+            z-index: 1;
+            font-family: 'Source Sans Pro', sans-serif; 
+        }
 
         .social-links {
             position: fixed;
@@ -275,35 +275,35 @@
         </a>
          <ul class="movie-list">
         <li>
-            <img src="https://www.gstatic.com/tv/thumb/v22vodart/3429/p3429_v_v8_aa.jpg" alt="The Shawshank Redemption">
-            <span>The Shawshank Redemption</span>
+            <img src="https://www.indiewire.com/wp-content/uploads/2022/10/MCDWHCH_EC014.jpg" alt="White Chicks" style="width: 280px; height: 200px; border-radius: 10px;">
+            <span>White chicks</span>
         </li>
         <li>
-            <img src="https://www.gstatic.com/tv/thumb/v22vodart/16321/p16321_v_v8_ab.jpg" alt="The Godfather">
-            <span>The Godfather</span>
+            <img src="https://streamcoimg-a.akamaihd.net/000/418/2134/4182134-Banner-L2-e826f2226ec97d315ab9b6b79d05b2ef.jpg" alt="Coach Carter" style="width: 280px; height: 200px; border-radius: 10px;">
+            <span>Coach Carter</span>
         </li>
         <li>
-            <img src="https://www.gstatic.com/tv/thumb/v22vodart/14805/p14805_v_v8_aa.jpg" alt="Pulp Fiction">
-            <span>Pulp Fiction</span>
+            <img src="https://play-lh.googleusercontent.com/drnZoqfUFQIVfeYRTEznCptMZWnitXZIFtuj3t8xw5y8k-dZ6G_0t3WAR_790f9ZLc0rsGvdAiv0flYDZQ" alt="Shameless" style="width: 280px; height: 200px; border-radius: 10px;">
+            <span>Shameless</span>
         </li>
-		</ul>
+        </ul>
         <a href="#" class="music-icon" title="Favorite Music Genres">
             <i class="fas fa-music nav-icon"></i>
         </a>
-         <ul class="music-list">
+          <ul class="music-list">
         <li>
-            <img src="https://media.istockphoto.com/photos/rock-music-word-written-with-bolder-white-and-green-cubes-picture-id1133672791?k=6&m=1133672791&s=612x612&w=0&h=qkbIYSS_GxIBgXNivKpCR6ahQwOhCxFgJ-PNrHWlS9s=" alt="Rock">
-            <span>Rock</span>
+            <img src="https://www.billboard.com/wp-content/uploads/stylus/501740-r-and-b-list-617-409.jpg?w=617" alt="RnB and Soul" style="width: 280px; height: 200px; border-radius: 10px;">
+            <span>RnB and Soul</span>
         </li>
         <li>
-            <img src="https://media.istockphoto.com/photos/pop-music-picture-id687847258?k=6&m=687847258&s=612x612&w=0&h=7vJ7tn-mT2wi6GZ7ZLM1RpBhvXri4ZY1lAPvkFAxgAM=" alt="Pop">
-            <span>Pop</span>
+            <img src="https://www.rappler.com/tachyon/2023/12/breakthrough-opm-artists-december-16-2023.jpg" alt="OPM" style="width: 280px; height: 200px; border-radius: 10px;">
+            <span>OPM</span>
         </li>
         <li>
-            <img src="https://media.istockphoto.com/photos/hiphop-music-concert-scene-picture-id912446980?k=6&m=912446980&s=612x612&w=0&h=25ZdNPI6qTbcBVrsDZpjM8ICR1r5XhunXyV7DB_KxPc=" alt="Hip Hop">
-            <span>Hip Hop</span>
+            <img src="https://www.rappler.com/tachyon/2023/12/breakthrough-opm-artists-december-16-2023.jpg" alt="Rap" style="width: 280px; height: 200px; border-radius: 10px;">
+            <span>Rap</span>
         </li>
-		</ul>
+    </ul>
             </li>
         </ul>
     </div>
